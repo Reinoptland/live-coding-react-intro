@@ -1,23 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+// Importing my home made components here:
+import Title from './Title'
+import LightSwitch from './LightSwitch'
+import Clock from './Clock'
+
+// Components can be functions too! (more on that later)
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* Use my components here */}
+        <Clock />
+        <h1>Hello world</h1>
+        <Title content="cute authors"/>
+        <LightSwitch />
       </header>
     </div>
   );
